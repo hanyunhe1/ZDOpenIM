@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name           = "ZDOpenIM"
-  s.version        = "1.0.1"
+  s.version        = "1.0.2"
   s.summary        = "Privately owned ZDOpenIM."
   s.description    = <<-DESC
 TODO: Add long description of the pod here.
@@ -12,12 +12,8 @@ TODO: Add long description of the pod here.
  
   s.ios.deployment_target = '11.0'
  
-  s.source_files = "ZDOpenIM/Sources/**/*.{h,m}"
-  s.public_header_files = "ZDOpenIM/Sources/**/*.h"
- 
-  s.resource_bundles = {
-    'ZDOpenIM' => ['ZDOpenIM/Resources/*.png']
-  }
+  s.source_files = "OIMUIKit/**/*.{h,m}"
+  s.public_header_files = "OIMUIKit/**/*.h"
  
   s.frameworks = "UIKit", "Foundation", "AVFAudio"
   s.dependency 'OpenIMSDK', '2.3.6'
